@@ -4,6 +4,8 @@ license           "Apache 2.0"
 description       "Installs git and/or sets up a Git server daemon"
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version           "1.0.0"
+
+name              "git"
 recipe            "git", "Installs git"
 recipe            "git::server", "Sets up a runit_service for git daemon"
 recipe            "git::source", "Installs git from source"
